@@ -1,18 +1,20 @@
 h1{
     color: crimson;
 }
-img{
-    height: auto; 
-    width: auto; 
-    max-width: 250px; 
-    max-height: 300px;
+#img1{
+    height: 300px; 
+    width: 400px; 
+    
 }
 #thirdDiv{
     width: 500px;
     height: 600px;
-    background-color: darksalmon;
+    background-color: rgb(30, 214, 238);
+    border: 10px;
+    border-color: blue;
 
 }
-.spanId{
+#spanId{
     font-size: 25px;
+    margin: 50px;
 }
