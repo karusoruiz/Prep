@@ -62,6 +62,12 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num < 90 ) {
+    return true
+ } 
+  else {
+    return false
+ }
 
 }
 
@@ -69,20 +75,25 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if ((num % 2) > 0) {
+    return true
+ } 
+  else {
+    return false
+ }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
-
+  return num ** 2
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-
+  return num = Math.pow(num,exponent)
 }
 
 function esPositivo(numero) {
@@ -90,27 +101,35 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+  if (numero  == 0) {
+    return false;
+  } 
+  if (numero > 0) {
+      return str3 = "Es positivo";
+    }
+  if (numero < 0) {
+      return str4 = "Es negativo";
+    }
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+  return str5 = nombre + " " + apellido;
 }
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   // Tu código:
-
+  return lado + lado + lado + lado
 }
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  
+  return cambioDolares = euro * 1.20
 }
 
 
@@ -119,7 +138,12 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-
+  if (letra.length > 1) {
+    return str6 = "Dato incorrecto";
+  }
+  if (letra.length == 1) {
+    return str7 = "Es vocal";
+  }
 }
 
 function obtenerMayor(x, y) {
@@ -127,7 +151,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-
+  if (x == y) {
+    return x
+  }
+  return mayor = Math.max(x,y);
 }
 
 /*
