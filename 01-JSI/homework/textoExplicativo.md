@@ -20,4 +20,4 @@
 
 > El código de los ejercicios realizados se ubican en `homework.js` donde se corrieron los tests hasta que TODOS pasaron.
 
-Podes ver las soluciones de `homework.js` [acá](https://github.com/karusoruiz/Prep/tree/master/01-JSI/homework)
+Podes ver las soluciones de `homework.js` [acá](https://github.com/karusoruiz/Prep/tree/master/01-JSI/homework/homework.js)
