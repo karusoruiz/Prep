@@ -177,13 +177,38 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   // Tu código:
-
+  typeof color === 'string';
+  //color = color.toUpperCase(); //Texto a mayúscula
+  //color = color.toLowerCase(); // Texto a minúscula
+  switch (color) {
+    case 'blue':
+      return str = "This is blue";
+      break;
+    case 'red':
+      return str = "This is red";
+      break;
+    case 'green':
+      return str = "This is green";
+      break;
+    case 'orange':
+      return str = "This is orange";
+      break;  
+    default:
+      return str = "Color not found";
+      break;
+  }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero == 5 || numero == 10){
+    return true;
+  }
+  else {
+    return false;
+  }
 
 }
 
@@ -191,7 +216,10 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero > 20 && numero < 50) {
+    return true;
+  }
+  return false;
 }
 
 function esPrimo(numero) {
@@ -201,7 +229,15 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
-
+  if (numero == 0 || numero == 1) {
+    return false;
+  }
+  for (var i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 function doWhile(numero) {
@@ -209,7 +245,13 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
-  
+  let i = 0;
+
+  do {
+    i = i + 1;
+    numero = numero + 5;
+  } while (i < 8);
+  return numero;
 }
 
 
