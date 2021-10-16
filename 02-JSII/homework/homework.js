@@ -50,18 +50,24 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser un array de enteros
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  let a = 0;
+  var a = 0;
   for (let i = 0; i < resultadosTest.length; i++) {
     a = a + resultadosTest[i];
   }
-  Promedio = a / i;
+  return a / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-
+  var max = numeros[0];
+  for (var i = 0; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i];
+  }
+}
+return max;
 }
 
 function multiplicarArgumentos() {
