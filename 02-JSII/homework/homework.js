@@ -38,7 +38,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (let i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     if (array[i] == elemento) {
       return true;
     }
@@ -74,13 +74,26 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
+  if(arguments.length === 0 ) {
+    return 0;
+  }
+  var multiplicacion = 1;
+  for (var i = 0; i < arguments.length; i++) {
+    multiplicacion = multiplicacion * arguments[i];
+  }
+  return multiplicacion;
 }
 
 function cuentoElementos(arreglo){
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
-
+  var cont = 0;
+  for (var i = 0; i < arreglo.length; i++) {
+    if(arreglo[i] > 18) {
+      cont++;
+    }  
+  }
+  return cont;
 }
 
 function todosIguales(arreglo) {
