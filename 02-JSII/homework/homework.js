@@ -100,15 +100,30 @@ function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-  
-} 
-
+  for (var i = 1; i < arreglo.length; i++) {
+    if(arreglo[0] !== arreglo[i]) {
+      return false;
+    }
+  }
+  return true;
+}
 function mesesDelAño(array) {
   // Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+  var arrayNew = new Array();
+  var c = 0;
+  for (var i = 0; i < array.length; i++) {
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
+      arrayNew[c] = array[i];
+      c++; 
+    }
+  }
+  if(arrayNew.length < 3) {
+    return 'No se encontraron los meses pedidos';
+  }
+  return arrayNew;
 }
 
 function breakStatement(numero) {
